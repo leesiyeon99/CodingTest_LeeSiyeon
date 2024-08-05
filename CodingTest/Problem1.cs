@@ -10,7 +10,8 @@
         static void Main(string[] args)
         {
             Solution solution = new Solution();
-            solution.solution("Leesiyeon");
+
+            Console.WriteLine(solution.Othersolution1("Leesiyeon"));
         }
 
         public class Solution
@@ -26,10 +27,38 @@
                     c += ans[i];
                 }
                 answer = c;
-                Console.WriteLine (answer);
 
                 return answer;
             }
+
+            public string Othersolution1(string my_string)
+            {
+
+                char[] ans = my_string.Reverse().ToArray();
+                string answer = new string(ans);
+                return answer;
+                // 위 코드와 아래의 코드 같음
+                return new string(my_string.Reverse().ToArray());
+            }
+
+            public string Othersolution2(string my_string)
+            {
+                List<char> list = new List<char>(my_string);
+                list.Reverse();
+                string answer = new string(list.ToArray());
+                return answer;
+            }
+
+            public string Othersolution3(string my_string)
+            {
+                string answer = "";
+                for (int i = my_string.Length - 1; i >= 0; i--)
+                    answer += my_string[i];
+                return answer;
+            }
+
+
+
         }
     }
 }
