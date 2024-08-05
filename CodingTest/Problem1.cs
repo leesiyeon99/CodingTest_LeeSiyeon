@@ -11,12 +11,12 @@
         {
             Solution solution = new Solution();
 
-            Console.WriteLine(solution.Othersolution1("Leesiyeon"));
+            Console.WriteLine(solution.Mysolution("Leesiyeon"));
         }
 
         public class Solution
         {
-            public string solution(string my_string)
+            public string Mysolution(string my_string)
             {
                 string answer = my_string;
                 string c="";
