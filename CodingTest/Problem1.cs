@@ -20,11 +20,12 @@
             {
                 string answer = my_string;
                 string c="";
-                List<char> ans = new List<char> (answer.Substring(0, answer.Length));
-                ans.Reverse();
-                for (int i = 0; i < ans.Count; i++)
+                List<char> list = new List<char> (answer.Substring(0, answer.Length));
+                //위의 코드와 같음 List<char> list = new List<char>(my_string);
+                list.Reverse();
+                for (int i = 0; i < list.Count; i++)
                 {
-                    c += ans[i];
+                    c += list[i];
                 }
                 answer = c;
 
