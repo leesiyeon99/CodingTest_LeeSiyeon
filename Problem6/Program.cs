@@ -12,18 +12,34 @@
         {
             public static void Main()
             {
+                OtherSolution solution = new OtherSolution();
+                
                 String[] input;
-
                 Console.Clear();
                 input = Console.ReadLine().Split(' ');
+                string answer = solution.OtherSolution1(input);
+                //Console.WriteLine(answer);
 
-                Queue<String> queue = new Queue<String>();
-                foreach (String s in input)
+                //MySolution
+                //Queue<String> queue = new Queue<String>();
+                //foreach (String s in input)
+                //{
+                //    queue.Enqueue(s);
+                //    Console.Write(s);
+                //}
+
+            }
+
+            public class OtherSolution
+            {
+                public string OtherSolution1(string[] input)
                 {
-                    queue.Enqueue(s);
-                    Console.Write(s);
+                    String s1 = input[0];
+                    String s2 = input[1];
+                    Console.WriteLine($"{s1}{s2}");
+                    return (s1 + s2);
+                    
                 }
-
             }
         }
     }
