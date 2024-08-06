@@ -18,15 +18,15 @@
                 Console.Clear();
                 input = Console.ReadLine().Split(' ');
                 string answer = solution.OtherSolution1(input);
-                //Console.WriteLine(answer);
+                Console.WriteLine(answer);
 
                 //MySolution
-                //Queue<String> queue = new Queue<String>();
-                //foreach (String s in input)
-                //{
-                //    queue.Enqueue(s);
-                //    Console.Write(s);
-                //}
+                Queue<String> queue = new Queue<String>();
+                foreach (String s in input)
+                {
+                    queue.Enqueue(s);
+                    Console.Write(s);
+                }
 
             }
 
@@ -36,7 +36,7 @@
                 {
                     String s1 = input[0];
                     String s2 = input[1];
-                    Console.WriteLine($"{s1}{s2}");
+                    //Console.WriteLine($"{s1}{s2}"); //OtherSolution2
                     return (s1 + s2);
                     
                 }
