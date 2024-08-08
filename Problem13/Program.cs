@@ -27,6 +27,12 @@
                 answer = num_list.Reverse().ToArray();
                 return answer;
             }
+
+            public int[] OtherSolutioin(int[] num_list)
+            {
+                Array.Reverse(num_list);
+                return num_list;
+            }
         }
     }
 }
