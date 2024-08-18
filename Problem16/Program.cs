@@ -36,5 +36,28 @@
                 return answer;
             }
         }
+
+        public class OtherSolution()
+        {
+            public string Solution1(string my_string, string letter)
+            {
+                string answer = "";
+                answer = my_string.Replace(letter, "");
+
+                return answer;
+            }
+
+            public string Solution2(string my_string, string letter)
+            {
+                string answer = "";
+                string[] str = my_string.Split(letter);
+                for (int i = 0; i < str.Length; i++)
+                {
+                    answer += str[i];
+                }
+                return answer;
+            }
+        }
+
     }
 }
