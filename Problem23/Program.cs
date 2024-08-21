@@ -30,6 +30,33 @@
                 }
                 return answer;
             }
+
+            public int OtherSolution1(string my_string)
+            {
+                int answer = 0;
+                for (int i = 0; i < my_string.Length; i++)
+                {
+                    if (char.IsDigit(my_string[i]) == true) // IsDigit :숫자인지 아닌지 판별
+                    {
+                        answer += my_string[i] - 48;
+                    }
+                }
+
+                return answer;
+            }
+
+            public int OtherSolution2(string my_string)
+            {
+                int answer = 0;
+
+                for (int i = 0; i < my_string.Length; i++)
+                {
+                    if (int.TryParse(my_string[i].ToString(), out int result))
+                        answer += result;
+                }
+
+                return answer;
+            }
         }
     }
 }
