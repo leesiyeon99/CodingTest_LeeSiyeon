@@ -30,6 +30,12 @@
                     answer = 2;
                 return answer;
             }
+
+            public int Othersolution(int n)
+            {
+                int answer = Math.Sqrt(n) % 1 == 0 ? 1 : 2;
+                return answer;
+            }
         }
     }
 }
